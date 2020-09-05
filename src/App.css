@@ -20,19 +20,16 @@
   padding: 0 40px;
   border: 1px solid;
   margin: 20px;
+  position: relative;
 }
 
-/* header top */
-.new-item .header_top h4 {
+h4 {
   text-align: center;
   margin: 20px 0 50px 0;
   text-transform: capitalize;
 }
 
-/*End header top */
-
-/* content */
- .content-item .top_content input {
+.top_content input {
   padding: 10px 10px;
   border-radius: 3px;
   border: 1px solid #DEDEDE;
@@ -44,60 +41,50 @@ input:focus {
   outline: none;
 }
 
-
-/* center content */
- .content-item .center_content label,
- .content-item .bottom_content label {
+label {
   display: block;
   font-size: 13px;
   font-weight: 500;
-  margin: 0 0 5px 0;
+  margin: 15px 0 15px 5px;
   text-transform: capitalize;
 }
 
- .content-item .center_content textarea {
+textarea {
   width: 100%;
   border: 1.5px solid #4B4B4B;
   padding: 5px 10px;
 }
 
-/*End center content */
-
-
-/*bottom content */
-
- .content-item .bottom_content {
+.bt-item {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0 0 0;
 }
 
-
- .content-item .bottom_content .bottom_content---left {
+.bt-item-left {
   width: 45%;
 }
 
- .content-item .bottom_content .bottom_content---left .icon_input {
+.icon_input {
   display: flex;
   justify-content: start;
 }
 
- .content-item .bottom_content .bottom_content---right {
+.bt-item-right {
   width: 50%;
 }
 
- .content-item .bottom_content .bottom_content---left input,
- .content-item .bottom_content .bottom_content---right select {
+input,
+select {
   padding: 10px 10px;
   border: 1.5px solid #4B4B4B;
   width: 100%;
 }
 
-.content-item .button_content {
+.button_content {
   margin: 0 0 50px 0;
 }
 
- .content-item .button_content button {
+.button_content button {
   padding: 10px 25px;
   width: 100%;
   border-radius: 3px;
@@ -107,11 +94,6 @@ input:focus {
   color: #ffffff;
   font-size: 15px;
 }
-/*End bottom content */
-
-/*End content */
-
-/* todolist */
 
 h4 {
   text-align: center;
@@ -119,7 +101,7 @@ h4 {
   text-transform: capitalize;
 }
 
-.list-item .list_text {
+.item-detail {
   display: flex;
   justify-content: space-between;
   border: 1px solid #000000;
@@ -127,11 +109,11 @@ h4 {
   margin: 20px 0;
 }
 
-.list-item .list_text .list_text---left {
+.item-detail-left {
   display: flex;
 }
 
-.list-item .list_text .list_text---right {
+.item-detail-right {
   display: flex;
   width: 40%;
 }
@@ -143,48 +125,49 @@ h5 {
   margin-left: 10px;
 }
 
-.list-item .list_text .list_text---right .detail_button {
+.detail {
   width: 55%;
 }
 
- .remove_button {
+ .remove {
   width: 40%;
 }
 
-.detail_button button,
-.remove_button button {
+.detail button,
+.remove button {
   border-radius: 3px;
+  cursor: pointer;
   color: #ffffff;
   font-size: 13px;
 }
 
-.detail_button button {
+.detail button {
   border: 1px solid #00BCD4;
   background-color: #00BCD4;
   padding: 5px 25px;
-  cursor: pointer;
 }
 
-.remove_button button {
+.remove button {
   border: 1px solid #D9534F;
   background-color: #D9534F;
   padding: 5px 15px;
-  cursor: pointer;
 }
 
 button:focus {
   outline: none;
 }
 
-.remove-all button {
-  margin:20px 0 20px 360px;
-}
-
-.hide-block {
+.hide {
   display: none;
 }
 
-.display-block {
+.visible {
   display: block;
 }
-/*End todolist */
+
+.remove-all button {
+  margin:20px 0 0 360px;
+  position: absolute;
+  bottom: 10px;
+}
+

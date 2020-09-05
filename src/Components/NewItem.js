@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 class NewItem extends Component {
 
   render() {
+
     const date = new Date();
     date.setDate(date.getDate());
     const time = date.toISOString().substr(0,10);
@@ -27,15 +28,15 @@ class NewItem extends Component {
     return (
       <div className="new-item">
         <h4>New Task</h4>
-        <form className="content-item">
-          <div className="top_content">
+        <form>
+          <div>
             <input type="text"
               placeholder="Add new task ..."
               ref="title"
               required>
             </input>
           </div>
-          <div className="center_content">
+          <div>
             <label>Description</label>
             <textarea
               rows="10"
@@ -44,8 +45,8 @@ class NewItem extends Component {
               required>
             </textarea>
           </div>
-          <div className="bottom_content">
-            <div className="bottom_content---left">
+          <div className="bt-item">
+            <div className="bt-item-left">
             <label>Due date</label>
             <div className="icon_input">
               <input
@@ -56,7 +57,7 @@ class NewItem extends Component {
               </input>
             </div>
             </div>
-            <div className="bottom_content---right">
+            <div className="bt-item-right">
               <label>Piority</label>
               <select ref="pior">
                 <option>Normal </option>

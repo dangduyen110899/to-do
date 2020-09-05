@@ -27,20 +27,20 @@ class Item extends Component {
 
     return (
       <div key={item.id}>
-        <div className="list_text" >
-          <div className="list_text---left">
+        <div className="item-detail" >
+          <div className="item-detail-left">
             <span>
               <input type="checkbox" checked></input>
             </span>
             <h5>{item.title}</h5>
           </div>
-          <div className="list_text---right">
-            <div className="detail_button">
+          <div className="item-detail-right">
+            <div className="detail">
               <button
                 onClick={() => this.setState({active: !this.state.active})}>Detail
               </button>
             </div>
-            <div className="remove_button">
+            <div className="remove">
               <button
                 onClick={() => this.props.deleteTodo(item.id)}>Remove
               </button>
@@ -49,15 +49,15 @@ class Item extends Component {
         </div>
 
         <form
-          className={ this.state.active ? "content-item display-block" : "content-item hide-block"}>
-          <div className="top_content">
+          className={ this.state.active ? "visible" : "hide"}>
+          <div>
             <input
               type="text"
               defaultValue={item.title}
               name="title"
               ref="title"/>
           </div>
-          <div className="center_content">
+          <div>
             <label>Description</label>
             <textarea
               rows="10"
@@ -67,8 +67,8 @@ class Item extends Component {
               required>
             </textarea>
           </div>
-          <div className="bottom_content">
-            <div className="bottom_content---left">
+          <div className="bt-item">
+            <div className="bt-item-left">
             <label>Due date</label>
             <div className="icon_input">
               <input
@@ -78,7 +78,7 @@ class Item extends Component {
               </input>
             </div>
             </div>
-            <div className="bottom_content---right">
+            <div className="bt-item-right">
               <label>Piority</label>
               <select
                 ref="pior"

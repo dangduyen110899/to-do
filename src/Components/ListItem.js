@@ -17,7 +17,7 @@ class ListItem extends Component {
             )
           })
         }
-      <div className="remove_button remove-all">
+      <div className="remove remove-all">
         <button
           onClick={() => this.props.deleteAll()}>RemoveAll
         </button>
