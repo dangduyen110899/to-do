@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  border: 1px solid #000000;
+  margin: 10px 100px;
+}
+
+.new-item {
+  width: 50%;
+  padding: 0 40px;
+}
+
+.list-item {
+  width: 50%;
+  padding: 0 40px;
+  border: 1px solid;
+  margin: 20px;
+}
+
+/* header top */
+.new-item .header_top h4 {
+  text-align: center;
+  margin: 20px 0 50px 0;
+  text-transform: capitalize;
+}
+
+/*End header top */
+
+/* content */
+ .content-item .top_content input {
+  padding: 10px 10px;
+  border-radius: 3px;
+  border: 1px solid #DEDEDE;
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+/* center content */
+ .content-item .center_content label,
+ .content-item .bottom_content label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+  text-transform: capitalize;
+}
+
+ .content-item .center_content textarea {
+  width: 100%;
+  border: 1.5px solid #4B4B4B;
+  padding: 5px 10px;
+}
+
+/*End center content */
+
+
+/*bottom content */
+
+ .content-item .bottom_content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 0 0;
+}
+
+
+ .content-item .bottom_content .bottom_content---left {
+  width: 45%;
+}
+
+ .content-item .bottom_content .bottom_content---left .icon_input {
+  display: flex;
+  justify-content: start;
+}
+
+ .content-item .bottom_content .bottom_content---right {
+  width: 50%;
+}
+
+ .content-item .bottom_content .bottom_content---left input,
+ .content-item .bottom_content .bottom_content---right select {
+  padding: 10px 10px;
+  border: 1.5px solid #4B4B4B;
+  width: 100%;
+}
+
+.content-item .button_content {
+  margin: 0 0 50px 0;
+}
+
+ .content-item .button_content button {
+  padding: 10px 25px;
+  width: 100%;
+  border-radius: 3px;
+  margin: 50px 0 0 0;
+  border: 1px solid #5CB85C;
+  background-color: #5CB85C;
+  color: #ffffff;
+  font-size: 15px;
+}
+/*End bottom content */
+
+/*End content */
+
+/* todolist */
+
+h4 {
+  text-align: center;
+  margin: 20px 0 50px 0;
+  text-transform: capitalize;
+}
+
+.list-item .list_text {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #000000;
+  padding: 15px 15px;
+  margin: 20px 0;
+}
+
+.list-item .list_text .list_text---left {
+  display: flex;
+}
+
+.list-item .list_text .list_text---right {
+  display: flex;
+  width: 40%;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.list-item .list_text .list_text---right .detail_button {
+  width: 55%;
+}
+
+ .remove_button {
+  width: 40%;
+}
+
+.detail_button button,
+.remove_button button {
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.detail_button button {
+  border: 1px solid #00BCD4;
+  background-color: #00BCD4;
+  padding: 5px 25px;
+  cursor: pointer;
+}
+
+.remove_button button {
+  border: 1px solid #D9534F;
+  background-color: #D9534F;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.remove-all button {
+  margin:20px 0 20px 360px;
+}
+
+.hide-block {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+/*End todolist */
