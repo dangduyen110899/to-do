@@ -4,14 +4,14 @@ class NewItem extends Component {
 
   render() {
 
-    const date = new Date();
-    date.setDate(date.getDate());
-    const time = date.toISOString().substr(0,10);
+    const date = new Date()
+    date.setDate(date.getDate())
+    const time = date.toISOString().substr(0,10)
     const handleForm = () => {
-      const title = this.refs.title.value;
-      const desc = this.refs.desc.value;
-      const date = this.refs.date.value;
-      const pior = this.refs.pior.value;
+      const title = this.refs.title.value
+      const desc = this.refs.desc.value
+      const date = this.refs.date.value
+      const pior = this.refs.pior.value
       const updateItem = {
         title: title,
         description: desc,

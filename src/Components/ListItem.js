@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Item from './Item';
+import Item from './Item'
 
 class ListItem extends Component {
   render() {
-    const { items, deleteTodo, updateTodo } = this.props;
+    const { items, deleteTodo, updateTodo } = this.props
     return (
       <div className="list-item" >
         <h4>To Do List</h4>

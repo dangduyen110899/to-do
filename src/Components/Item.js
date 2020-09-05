@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class Item extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       active: false
     }
@@ -11,10 +11,10 @@ class Item extends Component {
     const { item } = this.props
 
     const handleUpdate = () => {
-      const title = this.refs.title.value;
-      const desc = this.refs.desc.value;
-      const date = this.refs.date.value;
-      const pior = this.refs.pior.value;
+      const title = this.refs.title.value
+      const desc = this.refs.desc.value
+      const date = this.refs.date.value
+      const pior = this.refs.pior.value
       const newItem = {
         id: item.id,
         title: title,
@@ -22,7 +22,7 @@ class Item extends Component {
         date: date,
         piority: pior
       }
-      this.props.updateTodo(newItem);
+      this.props.updateTodo(newItem)
     }
 
     return (
@@ -102,4 +102,4 @@ class Item extends Component {
 }
 
 
-export default Item;
+export default Item

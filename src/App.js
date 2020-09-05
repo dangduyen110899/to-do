@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import './App.css'
-import NewItem from './Components/NewItem';
-import ListItem from './Components/ListItem';
+import NewItem from './Components/NewItem'
+import ListItem from './Components/ListItem'
 
 class App extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
       items: []
     }
@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   updateTodo = (itemUpdate) => {
-    const items = this.state.items;
+    const items = this.state.items
     items.map( (item,index) => {
       if(itemUpdate.id === item.id){
         items.splice(index,1,itemUpdate)
@@ -42,7 +42,7 @@ class App extends Component {
       if(item.id == idItem) {
         items.splice(index,1)
       }
-    });
+    })
     this.setState({items}, () => {
       localStorage.setItem('items', JSON.stringify(this.state.items))
     })
@@ -56,9 +56,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const items = localStorage.getItem('items');
+    const items = localStorage.getItem('items')
     if (items) {
-      this.setState({ items: JSON.parse(items)});
+      this.setState({ items: JSON.parse(items)})
     }
   }
 
