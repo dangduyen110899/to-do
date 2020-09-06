@@ -17,7 +17,7 @@ class App extends Component {
     this.setState({
       items,
     },() => {
-      localStorage.setItem('items', JSON.stringify(this.state.items))
+      localStorage.setItem('todos', JSON.stringify(this.state.items))
     })
   }
 
@@ -31,7 +31,7 @@ class App extends Component {
     this.setState({
       items,
     },() => {
-      localStorage.setItem('items', JSON.stringify(this.state.items))
+      localStorage.setItem('todos', JSON.stringify(this.state.items))
     })
   }
 
@@ -44,21 +44,21 @@ class App extends Component {
       }
     })
     this.setState({items}, () => {
-      localStorage.setItem('items', JSON.stringify(this.state.items))
+      localStorage.setItem('todos', JSON.stringify(this.state.items))
     })
   }
 
   deleteAll = () => {
     const items = []
     this.setState({items}, () => {
-      localStorage.setItem('items', JSON.stringify(this.state.items))
+      localStorage.setItem('todos', JSON.stringify(this.state.items))
     })
   }
 
   componentDidMount() {
-    const items = localStorage.getItem('items')
-    if (items) {
-      this.setState({ items: JSON.parse(items)})
+    const todos = localStorage.getItem('todos')
+    if (todos) {
+      this.setState({ items: JSON.parse(todos)})
     }
   }
 

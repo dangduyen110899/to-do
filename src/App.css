@@ -73,7 +73,7 @@ textarea {
   width: 50%;
 }
 
-input,
+form input,
 select {
   padding: 10px 10px;
   border: 1.5px solid #4B4B4B;
