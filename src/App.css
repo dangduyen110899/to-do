@@ -11,15 +11,14 @@
 }
 
 .new-item {
-  width: 50%;
+  width: 45%;
   padding: 0 40px;
 }
 
-.list-item {
-  width: 50%;
+.to-do-list {
+  width: 55%;
   padding: 0 40px;
-  border: 1px solid;
-  margin: 20px;
+  border-left: 1px solid;
   position: relative;
 }
 
@@ -165,9 +164,54 @@ button:focus {
   display: block;
 }
 
-.remove-all button {
-  margin:20px 0 0 360px;
+.remove-all button:nth-child(2) {
+  margin:20px 0 0 370px;
   position: absolute;
+  padding: 10px 20px;
   bottom: 10px;
 }
 
+.remove-all button:nth-child(1) {
+  margin:20px 0 0 265px;
+  position: absolute;
+  padding: 11px 30px;
+  background-color: #4a80d1;
+  border: none;
+  bottom: 10px;
+}
+
+.search input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid;
+  position: relative;
+}
+
+.search i {
+  position: absolute;
+  top: 101px;
+  left: 511px;
+  cursor: pointer;
+}
+
+.new-item span {
+  color: red;
+  font-size: 13px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.bukAction {
+  background-color: rgb(204, 204, 204);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 64px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.bukAction h3 {
+  margin: 20px;
+}

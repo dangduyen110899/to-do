@@ -10,6 +10,10 @@ class Item extends Component {
   render() {
     const { item } = this.props
 
+    const handleCheck = () => {
+      this.props.check(item.id)
+    }
+
     const handleUpdate = () => {
       const title = this.refs.title.value
       const desc = this.refs.desc.value
@@ -20,7 +24,8 @@ class Item extends Component {
         title: title,
         description: desc,
         date: date,
-        piority: pior
+        piority: pior,
+        check: false
       }
       this.props.updateTodo(newItem)
     }
@@ -30,7 +35,7 @@ class Item extends Component {
         <div className="item-detail" >
           <div className="item-detail-left">
             <span>
-              <input type="checkbox" checked></input>
+              <input type="checkbox" onClick={() => handleCheck()}></input>
             </span>
             <h5>{item.title}</h5>
           </div>
